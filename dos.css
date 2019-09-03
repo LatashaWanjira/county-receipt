@@ -1,0 +1,59 @@
+.pHead {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sec1 {
+  padding-bottom: 30px;
+}
+
+.sec1Left {
+  /* position: relative; */
+}
+
+.secPContent {
+  position: relative;
+}
+
+.sec1Right {
+  text-align: right;
+  position: relative;
+  float: right;
+}
+
+.imgBar {
+  width: 32%;
+}
+
+.interSec {
+  background-color: #208F4A;
+  position: relative;
+  color: white;
+  padding-top: 15.5px;
+}
+
+.interSecContent {
+  position: relative;
+}
+
+.interSecContent p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.interSecDet {
+  position: relative;
+  right: 0;
+  left: 0;
+  margin-bottom: 30px;
+}
+
+.interSecDetContent {
+  padding: 7px 0;
+  position: relative;
+  display: flex;
+}
+
+#ksh {
+  color: #208F4A;
+}

@@ -1,0 +1,36 @@
+.vidImg{
+  position: relative;
+}
+.vid{
+  text-align: center;
+}
+iframe{
+  width: 700px;
+  height: 350px;
+  object-fit: cover;
+}
+.imgHolder{
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 30px;
+  display: flex;
+}
+.imgHolder img{
+  width: 100%;
+  top: 40px;
+  padding:0 20px;
+}
+.img{
+  width: 528px;
+  height: 132.5px;
+  overflow-y: hidden;
+}
+.img img{
+  object-fit: cover;
+}
+.img a:hover{
+  opacity: 0.8;
+}
+.img a:active{
+  opacity: 1;
+}

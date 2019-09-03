@@ -1,0 +1,95 @@
+.slantMain{
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 45px;
+}
+.noteSlant{
+  background: rgba(211, 211, 211, .0);
+  color: black;
+  position: relative;
+  z-index: 1;
+  right: 20px;
+  padding-left: 50px!important;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+.mr-8px{
+}
+.noteSlant::after{
+  background: rgba(211, 211, 211, .15);
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(25deg);
+  transform: skewX(25deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+.totalSlant{
+  background: rgba(211, 211, 211, .0);
+  color: black;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.totalSlant::after{
+  background: rgba(211, 211, 211, .15);
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(25deg);
+  transform: skewX(25deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+.tHead{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-top: 15.5px;
+  font-weight: 700;
+  position: relative;
+}
+.kshSlant{
+  background: rgba(32, 143, 74, 0);
+  color: white;
+  position: relative;
+  z-index: 1;
+  left: 20px;
+  display: inline-block;
+  padding-right: 100px !important;
+}
+.kshSlant::after{
+  background: rgba(32, 143, 74, 1);
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  transform: skewY(25deg);
+  transform: skewX(25deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+.kshHead{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-top: 15.5px;
+  position: relative;
+  font-weight: 700;
+}
+.kshSlant p{
+  white-space: nowrap;
+}

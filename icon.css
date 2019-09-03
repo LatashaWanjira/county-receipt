@@ -1,0 +1,81 @@
+.icon-printer {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-printer .printer-body {
+  width: 80%;
+  height: 42%;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  margin-left: -40%;
+  background-color: #000;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 75%;
+  border-bottom-right-radius: 75%;
+}
+
+.icon-printer .printer-top {
+  width: 60%;
+  height: 15%;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  margin-left: -30%;
+  background-color: #151517;
+  border-radius: 20%;
+}
+
+.icon-printer .printer-bottom {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  left: 50%;
+  bottom: -38%;
+  margin-left: -30%;
+  background-color: #151517;
+  border-radius: 15%;
+}
+
+.icon-printer .printer-file-bottom {
+  width: 50%;
+  height: 16%;
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  margin-left: -25%;
+  background-color: #000;
+  border-radius: 20%;
+}
+
+.icon-printer .printer-file-top {
+  width: 50%;
+  height: 34%;
+  position: absolute;
+  left: 50%;
+  margin-left: -25%;
+  top: 23%;
+  background-color: #000;
+  border-radius: 10%;
+}
+
+.icon-printer .printer-dot {
+  width: 6%;
+  height: 6%;
+  position: absolute;
+  top: 65%;
+  background-color: #151517;
+  border-radius: 100%;
+}
+
+.icon-printer .printer-line {
+  width: 24%;
+  height: 4%;
+  position: absolute;
+  background-color: #151517;
+  border-radius: 15%;
+}

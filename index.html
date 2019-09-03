@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/jpg" href="Images/Untitledlogo2.png">
+  <title>County Receipt</title>
+
+  <link rel="stylesheet" href="icon.css">
+  <link rel="stylesheet" href="uno.css">
+  <link rel="stylesheet" href="dos.css">
+  <link rel="stylesheet" href="tres.css">
+  <link rel="stylesheet" href="cuatro.css">
+  <link rel="stylesheet" href="cinco.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script src="app.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="topSpace noPrint"></div>
+    <div class="noPrint">
+      <a href="javascript:window.print();">
+        <div class="icon-printer">
+          <div class="printer-body" style="background-color: #00aa00"></div>
+          <div class="printer-top"></div>
+          <div class="printer-bottom"></div>
+          <div class="printer-file-top" style="background-color: #44dd44"></div>
+          <div class="printer-dot" style="left: 65%"></div>
+          <div class="printer-line" style="left: 50%; top: 32%; margin-left: -12%"></div>
+          <div class="printer-line" style="left: 50%; top: 42%; margin-left: -12%"></div>
+          <div class="printer-file-bottom" style="background-color: #44dd44"></div>
+        </div>
+      </a>
+    </div>
+    <div class="main row">
+      <div class="topBar col-12">
+        <div class="loop noPrint">
+          <img src="Images/loop.png" alt="">
+        </div>
+        <div class="row noPrint">
+          <div class="col-3">
+            <p class="receipt">Receipt</p>
+          </div>
+          <div class="col-4">
+          </div>
+          <div class="logo col-5 pr-50px">
+            <img src="Images/Untitledlogo2.png" alt="">
+            <div class="logoContent">
+              <span>Nairobi City County</span><br>
+              <p>
+                City Hall, <br>
+                PO Box 30075-00100 Nairobi, Kenya
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec1 container">
+        <div class="row">
+          <div class="sec1Left pl-50px col-5">
+            <div class="date">
+              <p class="pHead">Date</p>
+              <p class="secPContent">{{date}}</p>
+            </div><br>
+            <div class="paidBy">
+              <p class="pHead">Paid by</p>
+              <p class="secPContent">
+                {{buyer}},<br>
+                {{phone}}<br>
+                {{paymentMethod}}
+              </p>
+            </div>
+          </div>
+          <div class="sec1Right pr-50px col-7">
+            <div class="receiptNo">
+              <p class="pHead">Receipt No</p>
+              <p class="secPContent" id="receipt">{{receiptNo}}</p>
+              <div class="barImg">
+                <img class="imgBar" src="Images/Untitledbar.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="interSec container">
+        <div class="interSecContent row">
+          <p class="description col-2 pl-50px">Description</p>
+          <div class="col-4"></div>
+
+          <p class="time col-2">Time</p>
+          <div class="col-2"></div>
+
+          <p class="total col-2 pr-50px">Total</p>
+        </div>
+      </div>
+
+      <div class="interSecDet container">
+        <div class="interSecDetContent row">
+          <p class="descriptionDet pl-50px col-6">{{description}}</p>
+          <p class="timeDet col-2">{{time}}</p>
+          <div class="col-2">
+
+          </div>
+          <p class="totalDet col-2" id="ksh">{{total}}</p>
+        </div>
+      </div>
+
+      <div class="slantMain container noPrint">
+        <div class="row">
+          <div class="noteSlant col-6 mr-8px">
+            <p class="pHead">Note</p>
+            <p>All amounts are in KES and VAT inclusive where applicable</p>
+          </div>
+          <div class="totalSlant col-3 mr-8px">
+            <p class="tHead">Total</p>
+          </div>
+          <div class="kshSlant col-3">
+            <p class="kshHead">{{total}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vidImg container  noPrint">
+        <div class="vid container">
+          <iframe class="youtube" src="https://www.youtube.com/embed/GRl988B_JH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+           picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="imgHolder container  noPrint">
+          <div class="img">
+            <a href="#"><img src="Images/img1.png" alt="" width="528px" height="98px"></a>
+          </div>
+          <div class="img">
+            <a href="#"><img src="Images/pexels-photo-248797.jpeg" alt="" width="528px" height="98px"></a>
+          </div>
+          <div class="img">
+            <a href="#"><img src="Images/img2.png" alt="" width="528px" height="98px"></a>
+          </div>
+          <div class="img" id="img4">
+            <a href="#"><img src="Images/img4.png" alt="" width="528px" height="98px"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer container">
+        <div class="row">
+          <div class="footerLogo col-7">
+            <a href="http://epayments.nairobi.go.ke/">epayments.nairobi.go.ke</a>
+          </div>
+          <div class="footerRight col-5">
+            <p><span>Powered by :</span><img src="Images/National.jpg" alt=""></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="endSpace noPrint"></div>
+  </div>
+</body>
+
+</html>
