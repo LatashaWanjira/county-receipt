@@ -73,7 +73,7 @@ button:hover {
 
 .receipt {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 2.2em;
   font-weight: 600;
   display: inline;
   position: relative;
@@ -92,14 +92,14 @@ button:hover {
 }
 
 .logo img {
-  width: 28.65%;
+  width: 100%;
+  margin: 0;
   border-radius: 50px;
   position: relative;
 }
 
 .logoContent {
   position: relative;
-  float: right;
   left: 15px;
 }
 

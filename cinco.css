@@ -56,6 +56,10 @@
     display: none;
   }
 
+  .topBar {
+    padding-top: 20px;
+  }
+
   .main {
     width: 100vw;
     overflow-x: hidden;
@@ -65,8 +69,8 @@
     padding-bottom: 100px;
   }
 
-  .interSecDet {
-    padding-bottom: 62.5%;
+  .slantMain {
+    padding-bottom: 50%;
   }
 
   .sec1 {
