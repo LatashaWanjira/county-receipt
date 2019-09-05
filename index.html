@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <link rel="icon" type="image/jpg" href="Images/Untitledlogo2.png">
   <title>County Receipt</title>
+  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="icon.css">
   <link rel="stylesheet" href="uno.css">
@@ -13,8 +17,6 @@
   <link rel="stylesheet" href="cuatro.css">
   <link rel="stylesheet" href="cinco.css">
 
-  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -25,40 +27,29 @@
 <body>
   <div class="container-fluid">
     <div class="topSpace noPrint"></div>
-    <div class="noPrint">
-      <a href="javascript:window.print();">
-        <div class="icon-printer">
-          <div class="printer-body" style="background-color: #00aa00"></div>
-          <div class="printer-top"></div>
-          <div class="printer-bottom"></div>
-          <div class="printer-file-top" style="background-color: #44dd44"></div>
-          <div class="printer-dot" style="left: 65%"></div>
-          <div class="printer-line" style="left: 50%; top: 32%; margin-left: -12%"></div>
-          <div class="printer-line" style="left: 50%; top: 42%; margin-left: -12%"></div>
-          <div class="printer-file-bottom" style="background-color: #44dd44"></div>
-        </div>
-      </a>
-    </div>
     <div class="main row">
       <div class="topBar col-12">
         <div class="loop noPrint">
           <img src="Images/loop.png" alt="">
         </div>
-        <div class="row noPrint align-items-center">
-          <div class="col-6">
+        <div class="row align-items-center">
+          <div class="col-7">
             <h1 class="receipt">Parking Receipt</h1>
           </div>
-          <div class="logo col-6">
-            <div class="row align-items-center">
-              <div class="col-4">
+          <div class="logo col-5">
+            <div class="row align-items-center no-gutters">
+              <div class="col-5">
                 <img src="Images/Untitledlogo2.png" alt="">
               </div>
-              <div class="col-8 pr-50px">
+              <div class="col-7">
                 <div class="logoContent">
-                  <span>Nairobi City County</span><br>
-                  <p>
-                    City Hall, <br>
-                    PO Box 30075-00100 Nairobi, Kenya
+                  <p>Nairobi City County
+                    <br>
+                    City Hall
+                    <br>
+                    PO Box 30075-00100
+                    <br>
+                    Nairobi, Kenya
                   </p>
                 </div>
               </div>
@@ -95,37 +86,34 @@
       </div>
       <div class="interSec container">
         <div class="interSecContent row">
-          <p class="description col-2 pl-50px">Description</p>
-          <div class="col-4"></div>
-
-          <p class="time col-2">Time</p>
-          <div class="col-2"></div>
-
-          <p class="total col-2 pr-50px">Total</p>
+          <p class="description col-6 pl-50px">Description</p>
+          <p class="time col-3">Time</p>
+          <p class="total col-3 pr-50px">Total</p>
         </div>
       </div>
 
       <div class="interSecDet container">
         <div class="interSecDetContent row">
           <p class="descriptionDet pl-50px col-6">{{description}}</p>
-          <p class="timeDet col-2">{{time}}</p>
-          <div class="col-2">
-
-          </div>
-          <p class="totalDet col-2" id="ksh">{{total}}</p>
+          <p class="timeDet col-3">{{time}}</p>
+          <p class="totalDet col-3" id="ksh">{{total}}</p>
         </div>
       </div>
 
       <div class="slantMain container">
-        <div class="row">
-          <div class="noteSlant col-6 mr-8px">
+        <div class="row align-items-start">
+          <div class="noteSlant col-5 mr-8px">
             <p class="pHead">Note</p>
             <p>All amounts are in KES and VAT inclusive where applicable</p>
           </div>
-          <div class="totalSlant col-3 mr-8px">
-            <p class="tHead">Total</p>
+          <div class="col-4">
+            <p class="tHead">Bill Amount</p>
+            <p class="tHead">Amount Received</p>
+            <p class="tHead">Balance</p>
           </div>
-          <div class="kshSlant col-3">
+          <div class="col-3 pr-0">
+            <p class="kshHead">{{total}}</p>
+            <p class="kshHead">{{total}}</p>
             <p class="kshHead">{{total}}</p>
           </div>
         </div>
@@ -152,19 +140,31 @@
           </div>
         </div>
       </div>
-      <div class="footer container">
-        <div class="row">
-          <div class="footerLogo col-7">
-            <a href="http://epayments.nairobi.go.ke/">epayments.nairobi.go.ke</a>
-          </div>
-          <div class="footerRight col-5">
-            <p><span>Powered by :</span><img src="Images/National.jpg" alt=""></p>
+      <footer>
+        <div class="bill container">
+          <div class="row">
+            <div class="col-6">
+              <p>Served by: Peter Griffin</p>
+            </div>
+            <div class="col-6">
+              <p>Bill No: <span class="billNo">123456789</span></p>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="footer container">
+          <div class="row">
+            <div class="footerLogo col-7">
+              <a href="http://epayments.nairobi.go.ke/">epayments.nairobi.go.ke</a>
+            </div>
+            <div class="footerRight col-5">
+              <p><span>Powered by :</span><img src="Images/National.jpg" alt=""></p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
     <div class="endSpace noPrint"></div>
+    <a href="javascript:window.print();" class="noPrint"><i class="icon ion-md-print"></i></a>
   </div>
 </body>
 

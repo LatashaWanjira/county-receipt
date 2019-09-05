@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  fo
 }
 
 body {
@@ -7,7 +8,7 @@ body {
   position: relative;
   background-color: gainsboro !important;
   background-size: cover;
-  font-family: "Segoe UI";
+  font-family: "Roboto Mono", monospace;
   display: grid;
   justify-content: center;
   overflow-x: hidden;
@@ -35,7 +36,7 @@ button:hover {
 
 .loop {
   position: absolute;
-  bottom: 150.5px;
+  top: -20px;
   right: 6px;
 }
 
@@ -67,7 +68,7 @@ button:hover {
   top: 0;
   left: 0;
   right: 0;
-  padding: 40px 50px 60px 50px;
+  padding: 30px 50px 90px;
   color: white;
 }
 
@@ -78,7 +79,7 @@ button:hover {
   display: inline;
   position: relative;
   top: 20px;
-  padding-left: 35.6px;
+  /* padding-left: 35.6px; */
 }
 
 #receipt {
@@ -111,4 +112,17 @@ button:hover {
   font-size: 0.75rem;
   position: relative;
   top: 5px;
+}
+
+a .ion-md-print {
+  color: #418f4a;
+  font-size: 50px;
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  transition: transform 0.5s;
+}
+
+a:hover .ion-md-print {
+  transform: scale(1.2);
 }
