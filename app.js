@@ -5,10 +5,11 @@ const app = new Vue({
     receiptNo:'7301c5e3-ce5b-c288-78c7-08d724cf177',
     buyer:'Kelvin Njuguna Ndungu',
     phone:'+25470xxxxx59',
+	  refnum:'SRTY6789H67',
     paymentMethod: 'Through Mpesa',
 
-    description:'Daily Car Parking for KBH 254R, Moi Avenue.',
-    time:'09:35 PM',
-    total:'KSH 200'
+    description:'Daily parking.',
+    time:'9/16/2019 09:35 PM',
+    total:'KSH 225,123,500'
   }
 });

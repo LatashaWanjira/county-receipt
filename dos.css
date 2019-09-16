@@ -22,7 +22,13 @@
 }
 
 .imgBar {
-  width: 32%;
+  width: 90px;
+	border: 1px solid;
+	width: 100px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-width: 3px;
+    border-color: #218f4a;
 }
 
 .interSec {

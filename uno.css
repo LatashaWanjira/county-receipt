@@ -126,3 +126,7 @@ a .ion-md-print {
 a:hover .ion-md-print {
   transform: scale(1.2);
 }
+
+.12px{
+	font-size: 12px
+}

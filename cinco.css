@@ -29,6 +29,10 @@
   text-align: right;
 }
 
+.todayis{
+	display: none;
+}
+
 .footerRight p span {
   position: relative;
   font-size: 0.85rem;
@@ -90,4 +94,55 @@
     bottom: 0;
     width: 100%;
   }
+	.interSec {
+    /* background-color: #f8f9fa; */
+    position: relative;
+    /* color: white; */
+    padding-top: 15.5px;
+    border-bottom: 3px solid;
+    /* border-top: 1px solid; */
+    border-color: #333;
+    margin-right: 50px;
+    margin-left: 51px;
+		background-color: #208f4a00;
+    position: relative;
+    color: rgba(12,12,12,0.8);
+}
+	.interSecContent p {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+	.kshHead {
+    background: #e9ecef;
+    color: #333;
+    text-transform: uppercase;
+     font-size: 16px; 
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    font-weight: 700;
+    white-space: nowrap;
+}
+	.tHead {
+    text-align: right;
+    color: black;
+    background: rgba(211, 211, 211, .15);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+	.topBar{
+		background-image:url("Images/gray-bg.png");
+		color: #495057;
+	}
+	
+	.todayis{
+		display: block;
+	}
+	
+	
 }

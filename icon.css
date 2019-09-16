@@ -19,6 +19,10 @@
   border-bottom-right-radius: 75%;
 }
 
+.font12{
+	font-size: 12px !important;
+}
+
 .icon-printer .printer-top {
   width: 60%;
   height: 15%;
@@ -79,3 +83,4 @@
   background-color: #151517;
   border-radius: 15%;
 }
+

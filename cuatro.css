@@ -34,3 +34,6 @@ iframe{
 .img a:active{
   opacity: 1;
 }
+.12px{
+	font-size: 12px !important;
+}

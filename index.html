@@ -61,14 +61,14 @@
         <div class="row">
           <div class="sec1Left pl-50px col-5">
             <div class="date">
-              <p class="pHead">Date</p>
-              <p class="secPContent">{{date}}</p>
+              <p class="pHead">Date  printed</p>
+              <p class="secPContent todayis">###</p>
             </div><br>
             <div class="paidBy">
               <p class="pHead">Paid by</p>
               <p class="secPContent">
                 {{buyer}},<br>
-                {{phone}}<br>
+                {{refnum}}<br>
                 {{paymentMethod}}
               </p>
             </div>
@@ -86,35 +86,39 @@
       </div>
       <div class="interSec container">
         <div class="interSecContent row">
-          <p class="description col-6 pl-50px">Description</p>
-          <p class="time col-3">Time</p>
-          <p class="total col-3 pr-50px">Total</p>
+          <p class="description col-5 pl-50px">Description</p>
+          <p class="time col-3 text-center">Time</p>
+          <p class="total col-4 text-right pr-50px">Total</p>
         </div>
       </div>
 
       <div class="interSecDet container">
         <div class="interSecDetContent row">
-          <p class="descriptionDet pl-50px col-6">{{description}}</p>
-          <p class="timeDet col-3">{{time}}</p>
-          <p class="totalDet col-3" id="ksh">{{total}}</p>
+          <p class="descriptionDet pl-50px col-5">
+			  {{description}}
+			  <br>
+			  <span class="font12">Daily parking for KBH 567T at Moi avenue</span>
+			</p>
+          <p class="timeDet col-3 text-center">{{time}}</p>
+          <p class="totalDet col-4 text-right pr-50px"  id="ksh">{{total}}</p>
         </div>
       </div>
 
       <div class="slantMain container">
         <div class="row align-items-start">
-          <div class="noteSlant col-5 mr-8px">
+          <div class="noteSlant col-5">
             <p class="pHead">Note</p>
-            <p>All amounts are in KES and VAT inclusive where applicable</p>
+            <p class="font12">All amounts are in KES and VAT inclusive where applicable</p>
           </div>
-          <div class="col-4">
+          <div class="col-3 px-0">
             <p class="tHead">Bill Amount</p>
             <p class="tHead">Amount Received</p>
             <p class="tHead">Balance</p>
           </div>
-          <div class="col-3 pr-0">
-            <p class="kshHead">{{total}}</p>
-            <p class="kshHead">{{total}}</p>
-            <p class="kshHead">{{total}}</p>
+          <div class="col-4 px-0">
+            <p class="kshHead text-right pr-50px">{{total}}</p>
+            <p class="kshHead text-right pr-50px">{{total}}</p>
+            <p class="kshHead text-right pr-50px">{{total}}</p>
           </div>
         </div>
       </div>
@@ -147,7 +151,7 @@
               <p>Served by: Peter Griffin</p>
             </div>
             <div class="col-6">
-              <p>Bill No: <span class="billNo">123456789</span></p>
+              <p class="text-right">Bill No: <span class="billNo">123456789</span></p>
             </div>
           </div>
         </div>
@@ -166,6 +170,17 @@
     <div class="endSpace noPrint"></div>
     <a href="javascript:window.print();" class="noPrint"><i class="icon ion-md-print"></i></a>
   </div>
+	
+	
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/moment.min.js"></script>
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+	<script>
+      
+		var todayis=moment().format("ddd, MMM Do YY");
+		$('.todayis').text(todayis);
+		console.log(todayis);
+    </script>
 </body>
 
 </html>
